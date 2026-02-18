@@ -1,116 +1,220 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
-    <link rel="stylesheet" href="assets/styless.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduAnalistik</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
 <body>
+  <div class="container">
 
-<header class="header">
-    <div class="container nav">
-        <div class="logo">LOGO</div>
-        <nav>
-            <a href="#">Розділ</a>
-            <a href="#">Розділ</a>
-            <a href="#">Розділ</a>
-            <a href="#">Розділ</a>
-        </nav>
-    </div>
-</header>
+    <nav>
+      <div>
+        <img width="40px" height="40px" src="assets/logo.png" alt="">
+        <h3>EduAnalistik</h3>
+      </div>
+      <div>
+        <h3>Головна</h3>
+        <h3>Можливості</h3>
+        <h3>Предмети</h3>
+        <h3>Аналітика</h3>
+      </div>
+    </nav>
 
-<section class="hero">
-    <div class="container">
-        <h1>Слоган бізнесу або фраза яка закликає до дії</h1>
-        <p>Під слоган, пояснення послуги, бенефіти які надаємо</p>
-        <button class="btn">Кнопка</button>
-    </div>
-</section>
+    <div class="section-wrapper">
 
-<section class="features">
-    <div class="container">
-        <h2>Ми компанія, яка займається, ми пропонуємо унікальні можливості</h2>
-        <div class="cards">
-            <div class="card">Приклад послуги №1</div>
-            <div class="card">Приклад послуги №2</div>
-            <div class="card">Приклад послуги №3</div>
-            <div class="card">Приклад послуги №4</div>
-        </div>
-    </div>
-</section>
+      <section class="welcome">
+        <h1>EduAnalytics</h1>
+        <h3><b>Це сучасний мінімалістичний застосунок у форматі ШІ-асистента, з яким можна спілкуватися як у чаті. Він допомагає учням готуватися до контрольних і самостійних робіт: аналізує попередні контрольні, підручники та рівень знань користувача, а потім створює персональний план навчання і підказує, що саме повторити.</b></h3>
+        <button style="background-color: #6BD4CD;">Отримати доступ</button>
+      </section>
 
-<section class="mission">
-    <div class="container">
-        <h2>Наша мета та місія</h2>
-        <div class="cards">
-            <div class="card">Заголовок</div>
-            <div class="card">Заголовок</div>
-            <div class="card">Заголовок</div>
-        </div>
-    </div>
-</section>
+      <section class="section2">
+        <h1>Принцип роботи</h1>
+        <main>
+          <div style="background-color: #6BD4CD;" class="item">
+            <h3>Створи свій профіль</h3>
+            <img src="assets/section2-1.png" width="90px" alt="">
+            <p>Вкажи клас, предмети та додай свої поточні оцінки.
+            Система проаналізує твій рівень підготовки, визначить середній бал та сформує базову картину успішності. Це дозволяє адаптувати всі рекомендації саме під тебе.</p>
+          </div>
+          <div style="background-color: #04345C;" class="item">
+            <h3 style="color: white;">Завантаж попередні контрольні</h3>
+            <img src="assets/section2-2.png" width="90px" alt="">
+            <p style="color: white;">Додай фото або текст контрольних чи самостійних робіт.
+            ШІ проаналізує структуру завдань, теми, складність і закономірності. На основі цього система визначить, які теми повторюються найчастіше та що варто очікувати надалі.</p>
+          </div>
+          <div style="background-color: #EEE6E6;" class="item">
+            <h3>Отримай детальний аналіз</h3>
+            <img src="assets/section2-3.png" width="90px" alt="">
+            <p>Застосунок покаже твої помилки, пояснить їх простими словами та визначить слабкі місця.
+            Ти побачиш, які теми потребують повторення, і отримаєш рекомендації для покращення результатів.</p>
+          </div>
+          <div style="background-color: #FF5757;" class="item">
+            <h3 style="color: white;">Навчайся з персональним планом</h3>
+            <img src="assets/section2-4.png" width="90px" alt="">
+            <p style="color: white;">На основі аналізу створюється індивідуальний план підготовки:
+            розподіл тем по днях, тренувальні завдання та короткі перевірки знань.
+            Через чат із ШІ ти можеш ставити запитання, тренуватися та впевнено підвищувати свої оцінки.</p>
+          </div>
+        </main>
+      </section>
 
-<section class="stats">
-    <div class="container stats-grid">
-        <div class="stat">4 дні</div>
-        <div class="stat">4 учасники</div>
-        <div class="stat">1 MVP</div>
-        <div class="stat">10 фідбеків</div>
-    </div>
-</section>
+        <section class="section3">
+          <h1>Як створювався цей StartUp?</h1>
+          <main>
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/section3-1.png" alt="">
+              </div>
+              <h3>Розумна аналітика оцінок</h3>
+              <p>
+                Система автоматично аналізує твої оцінки з контрольних та самостійних робіт.
+                Визначає середній бал, динаміку успішності та прогалини по темах.
+                Учень бачить реальний прогрес без складних розрахунків.
+              </p>
+            </div>
 
-<section class="team">
-    <div class="container">
-        <h2>Наша команда</h2>
-        <div class="cards">
-            <div class="card">Ім'я Прізвище<br><span>Product manager</span></div>
-            <div class="card">Ім'я Прізвище<br><span>Project manager</span></div>
-            <div class="card">Ім'я Прізвище<br><span>UX/UI designer</span></div>
-            <div class="card">Ім'я Прізвище<br><span>Front-end developer</span></div>
-        </div>
-    </div>
-</section>
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/section3-2.png" alt="">
+              </div>
+              <h3>Виявлення прогалин у знаннях</h3>
+              <p>
+                Застосунок знаходить теми, у яких ти найчастіше робиш помилки.
+                ШІ аналізує типи завдань та підсвічує слабкі місця.
+                Дає короткі пояснення та що саме повторити.
+              </p>
+            </div>
 
-<section class="cta">
-    <div class="container cta-content">
-        <div>
-            <h2>Заклик протестувати</h2>
-            <p>Залиш заявку прямо зараз</p>
-            <button class="btn">Кнопка</button>
-        </div>
-        <div class="cta-box"></div>
-    </div>
-</section>
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/section3-3.png" alt="">
+              </div>
+              <h3>Персональні рекомендації</h3>
+              <p>
+                На основі аналізу система пропонує конкретний план повторення.
+                Учень отримує тренувальні завдання, міні-перевірки знань та підказки,
+                як підняти результат найближчим часом.
+              </p>
+            </div>
+          </main>
+        </section>
 
-<section class="faq">
-    <div class="container">
-        <h2>FAQ Відповіді на поширені питання</h2>
-        <details>
+        <section class="section4">
+          <h1>Досягнення, факти, цифри</h1>
+          <main>
+            <div style="background-color:#6BD4CD;" class="stat">
+              <h3>2 дні</h3>
+              <p>Опис що огого сується цифра, статистика</p>
+            </div>
+
+            <div style="background-color:#FF5757; color:white;" class="stat">
+              <h3>5 учасників</h3>
+              <p>Опис що огого сується цифра, статистика</p>
+            </div>
+
+            <div style="background-color:#9B9B9B;" class="stat">
+              <h3>1 MVP</h3>
+              <p>Опис що огого сується цифра, статистика</p>
+            </div>
+
+            <div style="background-color:#04345C; color:white;" class="stat">
+              <h3>10 фідбеків</h3>
+              <p>Опис що огого сується цифра, статистика</p>
+            </div>
+          </main>
+        </section>
+
+        <section class="section5">
+          <h1>Наша команда</h1>
+
+          <div class="team-row">
+            <div class="member">
+              <img src="assets/section5-1.png" alt="">
+              <h3>Загоровський Максим</h3>
+              <p>UX & UI designer<br>Mobile Developer</p>
+            </div>
+
+            <div class="member">
+              <img src="assets/section5-2.png" alt="">
+              <h3>Бондаренко Поліна</h3>
+              <p>Front-end developer<br>UX & UI designer</p>
+            </div>
+
+            <div class="member">
+              <img src="assets/section5-3.png" alt="">
+              <h3>Клянчук Марія</h3>
+              <p>UX & UI designer<br>Project manager</p>
+            </div>
+          </div>
+
+          <div class="team-row2">
+            <div class="member small">
+              <img src="assets/section5-4.png" alt="">
+              <h3>Добкін Давід</h3>
+              <p>Front-end developer</p>
+            </div>
+
+            <div class="member small">
+              <img src="assets/section5-5.png" alt="">
+              <h3>Торош Степан</h3>
+              <p>Front-end developer</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section6">
+          <div class="cta-left">
+            <h2>Заклик затестувати, спробувати, залишити заявку</h2>
+            <p>Опис чому ми повинні залишити заявку прямо зараз, чому ми повинні спробувати продукт або послугу</p>
+            <button style="background-color:#6BD4CD;">Кнопка</button>
+          </div>
+
+          <div class="cta-right">
+            <div class="cta-img">
+              <img src="assets/cta.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="section7">
+          <h1>FAQ Відповіді на поширені питання</h1>
+
+          <details open class="faq-item">
             <summary>Для кого наш стартап?</summary>
-            <p>Цей продукт для тих хто...</p>
-        </details>
-        <details>
-            <summary>Питання 2</summary>
-            <p>Відповідь...</p>
-        </details>
-        <details>
-            <summary>Питання 3</summary>
-            <p>Відповідь...</p>
-        </details>
-    </div>
-</section>
+            <div class="faq-body">
+              Цей продукт для учнів, які хочуть готуватися швидше та ефективніше:
+              бачити свої прогалини у знаннях, отримувати персональний план і мати чат-помічника.
+            </div>
+          </details>
 
-<footer class="footer">
-    <div class="container">
-        <p>tel: +380 (096) XXX XX XX</p>
-        <p>e-mail: example@gmail.com</p>
-        <p>location: Kyiv, Ukraine</p>
-        <p class="copyright">Big Fish Academy. All rights reserved ©</p>
-    </div>
-</footer>
+          <details class="faq-item">
+            <summary>Як працює аналіз контрольних?</summary>
+            <div class="faq-body">
+              Ти завантажуєш фото або текст роботи — система визначає теми, типи завдань, повторювані помилки
+              і формує список “що повторити” + рекомендації.
+            </div>
+          </details>
 
+          <details class="faq-item">
+            <summary>Чи можна користуватись без контрольних?</summary>
+            <div class="faq-body">
+              Так. Можна почати з оцінок і предметів — контрольні лише підвищують точність і персоналізацію.
+            </div>
+          </details>
+        </section>
+
+        <footer class="footer">
+          <p>tel: +380 (063) 854 50 XX</p>
+          <p>e-mail: edu_analytics</p>
+          <p>location: Kyiv, Ukraine</p>
+          <p class="copy">EduAnalytics_UA. All rights reserved ©</p>
+        </footer>
+
+    </div>
+  </div>
 </body>
 </html>
-
-<script src="assets/main.js"></script>
