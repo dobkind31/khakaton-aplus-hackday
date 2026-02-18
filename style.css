@@ -408,3 +408,23 @@ section {
   text-align: center;
   opacity: 0.85;
 }
+
+/* плавна прокрутка при переході за #id */
+html {
+  scroll-behavior: smooth;
+}
+
+/* оформлення навбарних посилань */
+nav .nav-links a {
+  text-decoration: none;
+}
+
+nav .nav-links a h3 {
+  margin: 0;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover h3 {
+  color: #6BD4CD;
+}

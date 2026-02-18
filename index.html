@@ -15,23 +15,23 @@
         <img width="40px" height="40px" src="assets/logo.png" alt="">
         <h3>EduAnalistik</h3>
       </div>
-      <div>
-        <h3>Головна</h3>
-        <h3>Можливості</h3>
-        <h3>Предмети</h3>
-        <h3>Аналітика</h3>
+      <div class="nav-links">
+        <a href="#welcome"><h3>Головна</h3></a>
+        <a href="#section2"><h3>Можливості</h3></a>
+        <a href="#section5"><h3>Команда</h3></a>
+        <a href="#section7"><h3>FAQ</h3></a>
       </div>
     </nav>
 
     <div class="section-wrapper">
 
-      <section class="welcome">
+      <section id="welcome" class="welcome">
         <h1>EduAnalytics</h1>
         <h3><b>Це сучасний мінімалістичний застосунок у форматі ШІ-асистента, з яким можна спілкуватися як у чаті. Він допомагає учням готуватися до контрольних і самостійних робіт: аналізує попередні контрольні, підручники та рівень знань користувача, а потім створює персональний план навчання і підказує, що саме повторити.</b></h3>
         <button style="background-color: #6BD4CD;">Отримати доступ</button>
       </section>
 
-      <section class="section2">
+      <section id="section2" class="section2">
         <h1>Принцип роботи</h1>
         <main>
           <div style="background-color: #6BD4CD;" class="item">
@@ -62,7 +62,7 @@
         </main>
       </section>
 
-        <section class="section3">
+        <section id="section3" class="section3">
           <h1>Як створювався цей StartUp?</h1>
           <main>
             <div class="card">
@@ -103,7 +103,7 @@
           </main>
         </section>
 
-        <section class="section4">
+        <section id="section4" class="section4">
           <h1>Досягнення, факти, цифри</h1>
           <main>
             <div style="background-color:#6BD4CD;" class="stat">
@@ -128,7 +128,7 @@
           </main>
         </section>
 
-        <section class="section5">
+        <section id="section5" class="section5">
           <h1>Наша команда</h1>
 
           <div class="team-row">
@@ -180,7 +180,7 @@
           </div>
         </section>
 
-        <section class="section7">
+        <section id="section7" class="section7">
           <h1>FAQ Відповіді на поширені питання</h1>
 
           <details open class="faq-item">
@@ -208,13 +208,77 @@
         </section>
 
         <footer class="footer">
-          <p>tel: +380 (063) 854 50 XX</p>
-          <p>e-mail: edu_analytics</p>
+          <p>tel: +380 97 993 33 99</p>
+          <p>e-mail: yanebydyetochitat@chihuahua</p>
           <p>location: Kyiv, Ukraine</p>
           <p class="copy">EduAnalytics_UA. All rights reserved ©</p>
         </footer>
 
     </div>
+  <script>
+    // Button animations
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.05)';
+        this.style.transition = 'all 0.3s ease';
+        this.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
+        this.style.cursor = 'pointer';
+      });
+      
+      button.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = 'none';
+      });
+      
+      button.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 100);
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+        }
+      });
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    h1, h2, h3, p {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  </style>
   </div>
 </body>
 </html>
